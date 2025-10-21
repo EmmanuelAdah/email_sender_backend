@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="bba2cbb6-639c-47ab-9531-b88c599c1b03" name="expenseTracker@localhost Mapping">
+      <data-sources db="3be63008-ea8f-484d-9bb2-372b235985ba" ddl="50e5e422-e4a6-4b3a-9e01-5bef6888aced" />
+      <scope>
+        <node negative="1">
+          <node kind="database" negative="1">
+            <node kind="schema" qname="@" />
+          </node>
+          <node kind="database" qname="@" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="50e5e422-e4a6-4b3a-9e01-5bef6888aced" />
+          <option name="name" value="expenseTracker@localhost (DDL)" />
+          <option name="dbmsName" value="POSTGRES" />
+          <option name="urls">
+            <array />
+          </option>
+          <option name="outLayout" value="File per object by schema.groovy" />
+        </State>
+      </list>
+    </option>
+  </component>
+</project>
