@@ -12,6 +12,7 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static com.emailsender.utils.Validator.extractEmail;
@@ -82,9 +83,15 @@ public class EmailServiceImpl {
             // Expected format: email|name|subject|message
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split("\\|");
-                if (parts.length >= 4) {
-                    recipients.add(new Recipient(parts[0], parts[1], parts[2], parts[3]));
-                }
+                Recipient recipient = new Recipient();
+
+                    Arrays.stream(parts).forEach(part -> {
+                        if (isValidEmail(part.trim()))
+                            recipient.setEmail(part);
+
+                        if (!isValidEmail(part.trim()))
+                            recipient.setName(part);
+                    });
             }
         } catch (IOException ex) {
             throw new RuntimeException(ex);
