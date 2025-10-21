@@ -46,6 +46,7 @@
             <version>4.0.0-RC1</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-mail -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
@@ -120,12 +121,6 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.commercetools.sunrise.email/email-smtp -->
-        <dependency>
-            <groupId>com.commercetools.sunrise.email</groupId>
-            <artifactId>email-smtp</artifactId>
-            <version>0.3.0</version>
-        </dependency>
     </dependencies>
 
     <build>
