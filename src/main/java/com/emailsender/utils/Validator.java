@@ -18,7 +18,8 @@ public class Validator {
         String email = "";
         while (cell.hasNext()) {
             if (isValidEmail(cell.next().toString()))
-                email = cell.next().toString();
+                email = cell.next()
+                        .toString().trim();
         }
         return email;
     }
